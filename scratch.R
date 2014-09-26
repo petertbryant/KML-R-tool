@@ -4,6 +4,7 @@ library(maptools)
 library(foreign)
 library(rgdal)
 library(plotKML)
+library(rgeos)
 
 ##
 ## get the sampling location data
@@ -24,6 +25,11 @@ rm(tmp.dir,tmp.shp)
 tmp.dir <- "//deqhq1/tmdl/TMDL_WR/MidCoast/GIS/BacteriaTMDL/Beaches/EPA_Beach_Data/rad_beach_20140804_shp/rad_beach_20140804"
 tmp.shp <- "rad_beach_l"
 tmp.sp.beach.ext <- readShapeLines(paste0(tmp.dir,"/",tmp.shp), proj4string = CRS("+proj=longlat +datum=NAD83"), verbose = FALSE,repair=FALSE)
+## get beaches in OR
+tmp.sp.beach.ext.or <- tmp.sp.beach.ext[grep("^OR",tmp.sp.beach.ext$SRC_FEATID), ]
+
+
+
 ## get dbf file for beach attributes
 tmp.dbf <-"beach_attributes.dbf"
 tmp.beach.attr <- read.dbf(file=paste0(tmp.dir,"/",tmp.dbf))
@@ -31,49 +37,59 @@ tmp.beach.attr <- read.dbf(file=paste0(tmp.dir,"/",tmp.dbf))
 tmp.beach.attr.or <- tmp.beach.attr[tmp.beach.attr$BEACH_STAT == "OR",]
 unique(as.character(tmp.beach.attr.or$BEACH_ID))
 tmp.sp.beach.ext.or <- tmp.sp.beach.ext[grep("^OR",tmp.sp.beach.ext$SRC_FEATID), ]
-## transform to Oregon Lambert projection
-tmp.sp.beach.ext.or.ft <- spTransform(tmp.sp.beach.ext.or,CRS("+init=epsg:2992"))
-tmp.sp.stn.ft <- spTransform(tmp.sp.stn,CRS("+init=epsg:2992"))
-
-##tmp.beach.attr.or <- merge(x=tmp.sp.beach.ext.or,y=tmp.beach.attr.or, by.x="SRC_FEATID", by.y="BEACH_ID")
 
 
-
+## google CRS is "+init=epsg:4326"
 tmp.sp.stn.on.beach.ext.KML <- spTransform(
   snapPointsToLines(points=tmp.sp.stn.ft,lines=tmp.sp.beach.ext.or.ft,maxDist=300),
   CRS("+init=epsg:4326"))
 tmp.sp.beach.ext.or.KML <- spTransform(tmp.sp.beach.ext.or,CRS("+init=epsg:4326"))
 
+##
+## get the BEACON beach extents that are in the in Mid-Coast
+## out the stations and the Oregon Beacon beach extentsin the same CRS
+tmp.sp.beach.ext.or.KML <- spTransform(tmp.sp.beach.ext.or,CRS("+init=epsg:4326"))
+tmp.sp.stn.KML <- spTransform(tmp.sp.stn,CRS("+init=epsg:4326"))
+## create a polygon from the bounding box of the stations layer to use for clipping
+clip.bbox <- cbind(floor(bbox(tmp.sp.stn.KML)[,1]),ceiling(bbox(tmp.sp.stn.KML)[,2]))
+clip.rec <- rbind(c(clip.bbox[1,1],clip.bbox[2,2]),c(clip.bbox[1,2],clip.bbox[2,2]),c(clip.bbox[1,2],clip.bbox[2,1]),c(clip.bbox[1,1],clip.bbox[2,1]),c(clip.bbox[1,1],clip.bbox[2,2]))
+clip.sp.rec <- SpatialPolygons(list(Polygons(list(Polygon(clip.rec)),1)))
+proj4string(clip.sp.rec) <- CRS("+init=epsg:4326")
+## select the beach extents that are in the stations layer bounding block
+## this is "clipping" in the geometric set sense
+tmp.vec.in <- as.vector(gIntersects(clip.sp.rec,tmp.sp.beach.ext.or.KML,byid=TRUE))
+## beach extents in Mid-Coast by selecting rows of Oregeon beach extents
+tmp.sp.beach.ext.or.mc.KML <- tmp.sp.beach.ext.or.KML[tmp.vec.in == TRUE,]
+##
+## snap sample location to beach extents
+## transform to Oregon Lambert projection
+tmp.sp.beach.ext.or.mc.ft <- spTransform(tmp.sp.beach.ext.or.mc.KML,CRS("+init=epsg:2992"))
+tmp.sp.stn.ft <- spTransform(tmp.sp.stn,CRS("+init=epsg:2992"))
+## check distances of stations to beach extent lines
+shortest.dists <- numeric(nrow(tmp.sp.stn.ft))
+for (i in seq_len(nrow(tmp.sp.stn.ft))) {
+  shortest.dists[i] <- gDistance(tmp.sp.stn.ft[i,], tmp.sp.beach.ext.or.mc.ft)
+}
+df.shortest.dists <- data.frame(site=tmp.sp.stn.ft$site,dist_ft=round(shortest.dists,0))
+summary(df.shortest.dists)
 
-## trying to clip to get the beach lines only for the extent of the stations. 
-## I can clip the geometry, but I lose the attribute from "tmp.sp.beach.ext.or.KML"
-## which means I lose the names of the beaches. This is what I wanted in the first place!!!
+# there are 18 sites that are >= 100 ft from a beach extent
+length(df.shortest.dists$dist_ft[df.shortest.dists$dist_ft > 1000])
+df.shortest.dists[df.shortest.dists$dist_ft > 1000,]
 
-clip.bbox <- cbind(floor(bbox(tmp.sp.stn.on.beach.ext.KML)[,1]),ceiling(bbox(tmp.sp.stn.on.beach.ext.KML)[,2]))
-junk.box <- rbind(c(clip.bbox[1,1],clip.bbox[2,2]),c(clip.bbox[1,2],clip.bbox[2,2]),c(clip.bbox[1,2],clip.bbox[2,1]),c(clip.bbox[1,1],clip.bbox[2,1]),c(clip.bbox[1,1],clip.bbox[2,2]))
 
-junk.poly <- Polygon(junk.box)
-junk.polys <- Polygons(list(junk.poly),1)
-junk.sp.polys <- SpatialPolygons(list(junk.polys))
-proj4string(junk.sp.polys) <- CRS("+init=epsg:4326")
-junk.sp.polys.df <- SpatialPolygonsDataFrame(junk.sp.polys,data.frame(a=99.9))
 
-junk <- gIntersection(junk.sp.polys.df,tmp.sp.beach.ext.or.KML)
+tmp.sp.stn.on.ext.ft <- snapPointsToLines(points=tmp.sp.stn.ft,lines=tmp.sp.beach.ext.or.mc.ft,maxDist=5280)
+tmp.sp.stn.on.ext.KML <- spTransform(tmp.sp.stn.on.ext.ft,CRS("+init=epsg:4326"))
 
-junk.U <- gUnion(junk,tmp.sp.beach.ext.or.KML)
-names(junk.U)
-names(tmp.sp.beach.ext.or.KML)
-summary(junk)
-junk$SRC_FEATID
-str(junk)
-plot(junk)
-junk.sp.df <- SpatialLinesDataFrame(junk,data.frame(a=rep(-1,length(junk))))
-names(junk)
-plotKML()
-summary(junk.sp.polys.df)
 
-plotKML(junk.sp.polys.df)
+kml(tmp.sp.stn.KML,labels=site, size=10, scale=1)
+plotKML(tmp.sp.stn.KML,file="tmp.sp.stn.KML.kml")
+plotKML(tmp.sp.stn.KML)
 
+
+plotKML(tmp.sp.beach.ext.or.mc.KML)
+plotKML(tmp.sp.stn.on.ext.KML)
 ## plot in google earth
 plotKML(tmp.sp.stn.on.beach.ext.KML)
 plotKML(tmp.sp.beach.ext.or.KML)
