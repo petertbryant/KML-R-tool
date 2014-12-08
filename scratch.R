@@ -9,12 +9,13 @@ library(rgeos)
 ##
 ## get the sampling location data
 ## Get stations shapefile
-tmp.dir <- "//deqhq1/tmdl/TMDL_WR/MidCoast/GIS/BacteriaTMDL/Beaches/Layers"
-tmp.shp <- "stations_in_group_areas"
+tmp.dir <- "//deqhq1/tmdl/TMDL_WR/MidCoast/Models/Sediment/SSN/Stations"
+tmp.shp <- "Stations_SSN_20140822_GCS_NAD83.shp"
 tmp.sp.stn <- readShapePoints(paste0(tmp.dir,"/",tmp.shp), proj4string = CRS("+proj=longlat +datum=NAD83"), verbose = FALSE,repair=FALSE)
-unique(tmp.sp.stn$site)
+unique(tmp.sp.stn$STATION_KE)
 rm(tmp.dir,tmp.shp)
 
+tmp.sp.stn.KML <- spTransform(tmp.sp.stn,CRS("+init=epsg:4326"))
 
 ## get EPA BEACON beach extents
 ## downloaded shapefiles on 2014-09-23 from USEPA Geospatial downloads at
@@ -83,7 +84,7 @@ tmp.sp.stn.on.ext.ft <- snapPointsToLines(points=tmp.sp.stn.ft,lines=tmp.sp.beac
 tmp.sp.stn.on.ext.KML <- spTransform(tmp.sp.stn.on.ext.ft,CRS("+init=epsg:4326"))
 
 
-kml(tmp.sp.stn.KML,labels=site, size=10, scale=1)
+kml(tmp.sp.stn.KML,labels="STATION_KE")
 plotKML(tmp.sp.stn.KML,file="tmp.sp.stn.KML.kml")
 plotKML(tmp.sp.stn.KML)
 
