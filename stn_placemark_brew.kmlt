@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2"
   xmlns:gx="http://www.google.com/kml/ext/2.2">	<Document>
-		<name>Mid Coast Sediment TMDL Stations</name>
+		<name>Source Analysis Development Stations</name>
 		<Style id="stn_normal">
 			<IconStyle>
 				<scale>0.9</scale>
@@ -33,74 +33,77 @@
         </StyleMap>
 		<Folder>
 			<name>Sample Location</name>
-			<description> Original sample locations</description><% for(ii in 1:length(tmp.sp.stn.GE@data$STATION_KEY)){ %>
+			<% for(ii in 1:length(tmp.sp.stn.GE.rest@data$STATION_KEY)){ %>
 				<Placemark>
-					<name><%=as.character(tmp.sp.stn.GE@data$STATION_KEY[ii])%></name>
+					<name><%=as.character(tmp.sp.stn.GE.rest@data$STATION_KEY[ii])%></name>
 					<styleUrl>#stnsHighlight</styleUrl>
 						<ExtendedData>
 						<Data name="STATION_KEY">
-						<value><%=as.character(tmp.sp.stn.GE$STATION_KEY[ii])%></value>
+						<value><%=as.character(tmp.sp.stn.GE.rest$STATION_KEY[ii])%></value>
 						</Data>
 					  <Data name="SITE_NAME">
-						<value><%=as.character(tmp.sp.stn.GE$SITE_NAME[ii])%></value>
+						<value><%=as.character(tmp.sp.stn.GE.rest$SITE_NAME[ii])%></value>
 						</Data>
 						<Data name="SAMPLE_DATE">
-						<value><%=format(tmp.sp.stn.GE$DATE[ii], format = "%m/%d/%Y")%></value>
+						<value><%=format(tmp.sp.stn.GE.rest$DATE[ii], format = "%m/%d/%Y")%></value>
+						</Data>										
+						<Data name="Biocriteria Impaired">
+						<value><%=tmp.sp.stn.GE.rest$Impaired[ii]%></value>
 						</Data>
 						<Data name="FSS">
-						<value><%=as.character(tmp.sp.stn.GE$FSS_26Aug14[ii])%></value>
-						</Data>
-						<Data name="Sediment Stressor Identified">
-						<value><%=tmp.sp.stn.GE$Impaired[ii]%></value>
-						</Data>
-						<Data name="TMDL_Target">
-						<value><%=as.character(tmp.sp.stn.GE$TMDL_Target[ii])%></value>
+						<value><%=as.character(tmp.sp.stn.GE.rest$FSS_26Aug14[ii])%></value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value><%=tmp.sp.stn.GE.rest$SedStress[ii]%></value>
+            </Data>
+            <Data name="TMDL_Target">
+						<value><%=as.character(tmp.sp.stn.GE.rest$TMDL_Target[ii])%></value>
 						</Data>
 						<Data name="sum_1095_days">
-						<value><%=paste(as.character(round(tmp.sp.stn.GE$sum_1095_days[ii],1)),"in")%></value>
+  					<value><%=paste(as.character(round(tmp.sp.stn.GE.rest$sum_1095_days[ii],1)),"mm")%></value>
 						</Data>
 						<Data name = "PALITHERODRCA">
-						<value><%=paste(as.character(round(tmp.sp.stn.GE$PALITHERODRCA[ii],1)),"%",sep = "")%></value>
+						<value><%=paste(as.character(round(tmp.sp.stn.GE.rest$PALITHERODRCA[ii],2)),"%",sep = "")%></value>
 						</Data>
 						<Data name="STRMPWR">
-						<value><%=as.character(round(tmp.sp.stn.GE$STRMPWR[ii],1))%></value>
+						<value><%=as.character(round(tmp.sp.stn.GE.rest$STRMPWR[ii],1))%></value>
 						</Data>
 						<Data name="MIN_Z">
-						<value><%=paste(as.character(round(tmp.sp.stn.GE$MIN_Z[ii],1)),"m")%></value>
+						<value><%=paste(as.character(round(tmp.sp.stn.GE.rest$MIN_Z[ii],1)),"m")%></value>
 						</Data>
 						<Data name="PASILTRCA">
-						<value><%=paste(as.character(round(tmp.sp.stn.GE$PASILTRCA[ii],1)),"m")%></value>
+						<value><%=paste(as.character(round(tmp.sp.stn.GE.rest$PASILTRCA[ii],2)),"%")%></value>
 						</Data>
-						<Data name="XSLOPE_MAP">
-						<value><%=paste(as.character(round(tmp.sp.stn.GE$XSLOPE_MAP[ii],1)),"%",sep = "")%></value>
+						<Data name="PACLAYRCA">
+          	<value><%=paste(as.character(round(tmp.sp.stn.GE.rest$PACLAYRCA[ii],2)),"%",sep = "")%></value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value><%=paste(as.character(round(tmp.sp.stn.GE.rest$XSLOPE_MAP[ii],2)),"%",sep = "")%></value>
 						</Data>
   					<Data name="PASUSCEP5_DE">
-						<value><%=paste(as.character(round(tmp.sp.stn.GE$PASUSCEP5_DE[ii],1)),"%",sep = "")%></value>
+						<value><%=paste(as.character(round(tmp.sp.stn.GE.rest$PASUSCEP5_DE[ii],2)),"%",sep = "")%></value>
 						</Data>
-            <Data name="APOPRCA2010">
-  					<value><%=paste(as.character(round(tmp.sp.stn.GE$APOPRCA2010[ii],1)),"%",sep = "")%></value>
+            <Data name="DAPOPRCA2010">
+  					<value><%=paste(as.character(round(tmp.sp.stn.GE.rest$DAPOPRCA2010[ii],3))," count/sqkm",sep = "")%></value>
 						</Data>
             <Data name="LAT_RAW">
-    				<value><%=as.character(round(tmp.sp.stn.GE$LAT_RAW[ii],4))%></value>
+    				<value><%=as.character(round(tmp.sp.stn.GE.rest$LAT_RAW[ii],4))%></value>
 						</Data>
             <Data name="POWNRCA_PRI">
-      			<value><%=paste(as.character(round(tmp.sp.stn.GE$POWNRCA_PRI[ii],1)),"%",sep = "")%></value>
+      			<value><%=paste(as.character(round(tmp.sp.stn.GE.rest$POWNRCA_PRI[ii],2)),"%",sep = "")%></value>
 						</Data>
-            <Data name="PADISRSA_1YR">
-        		<value><%=paste(as.character(round(tmp.sp.stn.GE$PADISRSA_1YR[ii],1)),"%",sep = "")%></value>
+            <Data name="PDISRSA_1YR">
+        		<value><%=paste(as.character(round(tmp.sp.stn.GE.rest$PDISRSA_1YR[ii],2)),"%",sep = "")%></value>
 						</Data>
-            <Data name="upDist">
-        		<value><%=paste(as.character(round(tmp.sp.stn.GE$upDist[ii],1)),"m")%></value>
-						</Data>
-            <Data name="POWNRCA_FED">
-          	<value><%=paste(as.character(round(tmp.sp.stn.GE$POWNRCA_FED[ii],1)),"%",sep = "")%></value>
+            <Data name="DAROADX">
+        		<value><%=paste(as.character(round(tmp.sp.stn.GE.rest$DAROADX[ii],3)),"count/sqkm")%></value>
 						</Data>
             <Data name="PAOWNRCA_AGR">
-            <value><%=paste(as.character(round(tmp.sp.stn.GE$PAOWNRCA_AGR[ii])),"%",sep = "")%></value>
+            <value><%=paste(as.character(round(tmp.sp.stn.GE.rest$PAOWNRCA_AGR[ii],2)),"%",sep = "")%></value>
 						</Data>
-						</ExtendedData>
+            </ExtendedData>
 					<Point>
-						<coordinates><%=tmp.sp.stn.GE@coords[ii,1]%>,<%=tmp.sp.stn.GE@coords[ii,2],0%></coordinates>
+						<coordinates><%=tmp.sp.stn.GE.rest@coords[ii,1]%>,<%=tmp.sp.stn.GE.rest@coords[ii,2],0%></coordinates>
 					</Point>
 				</Placemark><% } %>
 		</Folder>

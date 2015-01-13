@@ -1,0 +1,2199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+  xmlns:gx="http://www.google.com/kml/ext/2.2">	<Document>
+		<name>Sediment Stressor Stations</name>
+		<Style id="stn_normal">
+			<IconStyle>
+				<scale>0.9</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/paddle/blu-blank.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id="stn_highlight">
+			<IconStyle>
+				<scale>1.5</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/paddle/ylw-blank.png</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+				<scale>1.1</scale>
+			</LabelStyle>
+		</Style>
+        <StyleMap id="stnsHighlight">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#stn_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#stn_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+		<Folder>
+			<name>Sample Location</name>
+      
+				<Placemark>
+					<name>25297</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>25297</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Siuslaw River at RM 76.2</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2001-08-15</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>20</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>3672 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>99.66%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>712.6</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>456 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>41.18 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>36.96%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>2.18%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>1.88%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0.018 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>43.8825</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>69.7%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>9.16%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0.001 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>4.14%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-123.5065,43.88242 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>26818</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>26818</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Siletz River South Fork</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2002-06-24</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>21</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>7</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>7549.2 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>88.34%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>121.5</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>1111.2 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>47.21 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>30.2%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>2.3%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>0.31%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>44.8228</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>100%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>2.27%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0.001 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>0%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-123.6332,44.82247 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>26822</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>26822</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Indian Cr</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2002-07-03</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>11</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>4904.4 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>99.96%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>251.2</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>230 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>37.32 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>25.65%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>1.18%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>2.61%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0.005 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>44.0971</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>0%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>0%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>0.09%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-123.8042,44.09708 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>26964</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>26964</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Siuslaw R</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2002-08-19</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>29</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>8</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>3277.9 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>99.63%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>435.8</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>492 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>41.69 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>38.26%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>1.49%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>1.17%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0.02 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>43.8755</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>32.07%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>0%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0.001 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>4.54%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-123.5018,43.87585 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>33320</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>33320</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Indian Cr</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2006-09-21</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>20</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>5550.8 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>100%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>222.5</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>352.9 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>36.8 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>25.17%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>2.89%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>3.04%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>44.1518</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>33.96%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>34.54%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>0%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-123.8318,44.15128 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>26822</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>26822</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Indian Cr</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2002-10-01</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>20</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>4906.8 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>99.96%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>251.2</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>230 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>37.32 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>25.65%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>1.18%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>2.61%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0.005 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>44.0971</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>0%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>0%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>0.09%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-123.8042,44.09708 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>26816</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>26816</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Siuslaw R</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2002-10-02</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>20</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>8</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>3365.4 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>99.7%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>610.1</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>390.4 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>40.69 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>36.07%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>1.64%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>2.36%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0.016 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>43.9049</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>46.8%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>11.63%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0.001 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>3.65%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-123.5993,43.90437 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>21792</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>21792</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Montgomery Cr</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2003-06-25</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>32</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>4166.7 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>100%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>38</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>34 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>56.03 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>30.11%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>8.16%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>0.43%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0.123 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>44.5808</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>95.67%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>38.55%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0.001 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>0%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-123.9301,44.5809 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>30403</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>30403</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Siuslaw River</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2003-09-16</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>40</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>8</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>3543.4 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>99.5%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>147</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>308 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>39.03 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>34.31%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>0.23%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>2.67%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0.012 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>43.987</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>79.88%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>4.58%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0.001 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>2.25%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-123.6412,43.98692 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>29906</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>29906</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Sweet Cr (Siuslaw)</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2003-07-22</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>27</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>5200.9 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>95.86%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>203.1</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>16 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>37.55 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>23.82%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>1.76%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>3.37%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0.007 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>43.9948</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>100%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>24.07%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0.001 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>0%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-123.8991,43.99451 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>21792</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>21792</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Montgomery Cr</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2003-08-21</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>35</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>4159.7 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>100%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>38</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>34 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>56.03 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>30.11%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>8.16%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>0.43%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0.123 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>44.5808</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>95.67%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>38.55%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0.001 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>0%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-123.9301,44.5809 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>25297</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>25297</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Siuslaw River at RM 76.2</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2007-08-29</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>23</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>3575.4 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>99.66%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>712.6</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>456 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>41.18 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>36.96%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>2.18%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>1.88%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0.018 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>43.8825</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>69.7%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>9.16%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0.001 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>4.14%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-123.5065,43.88242 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>21842</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>21842</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Flynn Creek at RM 1.71 (Alsea)</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2007-08-22</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>10</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>5675.8 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>100%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>49.1</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>523.9 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>37.39 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>26.11%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>4.07%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>0.44%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0.016 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>44.5393</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>0%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>0%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>0%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-123.8535,44.53914 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>21842</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>21842</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Flynn Creek at RM 1.71 (Alsea)</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2007-08-06</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>11</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>5664.5 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>100%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>49.1</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>523.9 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>37.39 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>26.11%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>4.07%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>0.44%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0.016 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>44.5393</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>0%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>0%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>0%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-123.8535,44.53914 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>33417</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>33417</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Fivemile Cr</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2007-08-27</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>32</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>5902.9 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>100%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>405.2</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>38.6 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>37.56 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>20.47%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>12.68%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>5.09%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>43.8398</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>88.23%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>39.29%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>0%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-124.0251,43.83924 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>33333</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>33333</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Simpson Cr</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2006-09-11</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>23</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>3484 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>100%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>13.4</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>586.4 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>41.88 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>46.26%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>10.41%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>0%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0.001 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>43.8527</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>51.64%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>0%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>0%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-123.3605,43.85266 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>33327</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>33327</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Esmond Cr, Trib A</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2006-08-30</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>22</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>4983.2 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>100%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>165.9</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>465.8 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>33.21 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>19.49%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>6.12%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>12.16%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>43.8841</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>0.99%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>0%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0.001 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>0%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-123.6585,43.88407 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>33361</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>33361</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Siletz R, S Fk</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2006-09-07</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>9</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>3</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>8702.9 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>65.46%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>450.7</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>739.2 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>44.62 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>28.27%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>2.03%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>2.45%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>44.8778</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>100%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>0.68%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0.001 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>0%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-123.7001,44.87747 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>33417</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>33417</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Fivemile Cr</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2006-09-21</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>25</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>5729.2 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>100%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>405.2</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>38.6 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>37.56 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>20.47%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>12.68%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>5.09%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>43.8398</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>88.23%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>32.74%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>0%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-124.0251,43.83924 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>33418</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>33418</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Bell Cr</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2006-08-21</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>30</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>5776.7 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>100%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>195.4</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>50.9 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>36.44 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>19.52%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>12.33%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>5.87%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>43.8413</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>48.07%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>36.31%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>0%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-124.0127,43.84138 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>34660</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>34660</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Oliver Cr at RM 0.63</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2007-09-10</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>50</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>4668.2 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>100%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>37.8</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>29.1 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>56.45 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>29.47%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>5.58%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>0.05%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0.131 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>44.4724</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>99.4%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>52.41%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0.003 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>0%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-124.0372,44.47223 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>34665</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>34665</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Siuslaw R at RM 57.02</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2007-09-19</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>28</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>3658.6 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>99.71%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>189</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>371 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>40.47 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>35.62%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>0.48%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>2.55%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0.015 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>43.9255</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>84.57%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>1.36%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0.001 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>3.47%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-123.6311,43.92533 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>34695</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>34695</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Fivemile Cr at Mouth</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2007-08-27</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>21</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>5911.7 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>100%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>361.2</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>47.9 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>38.06 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>21.28%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>11.3%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>3.31%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>43.838</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>99.51%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>4.35%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>0%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-124.014,43.838 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>21842</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>21842</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Flynn Creek at RM 1.71 (Alsea)</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2008-07-15</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>16</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>5943.9 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>100%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>49.1</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>523.9 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>37.39 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>26.11%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>4.07%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>0.44%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0.016 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>44.5393</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>0%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>0%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>0%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-123.8535,44.53914 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>33417</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>33417</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Fivemile Cr</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2008-09-03</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>32</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>6345.9 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>100%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>405.2</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>38.6 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>37.56 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>20.47%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>12.68%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>5.09%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>43.8398</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>88.23%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>32.74%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>0%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-124.0251,43.83924 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>33418</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>33418</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Bell Cr</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2009-09-10</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>22</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>5866.8 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>100%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>195.4</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>50.9 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>36.44 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>19.52%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>12.33%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>5.87%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>43.8413</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>48.07%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>36.31%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>0%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-124.0127,43.84138 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>33417</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>33417</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Fivemile Cr</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2009-09-09</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>26</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>5848.6 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>100%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>405.2</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>38.6 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>37.56 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>20.47%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>12.68%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>5.09%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>43.8398</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>88.23%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>32.74%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>0%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-124.0251,43.83924 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>21842</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>21842</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Flynn Creek at RM 1.71 (Alsea)</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>2012-09-21</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>12</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>6727.6 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>100%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>49.1</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>523.9 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>37.39 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>26.11%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>4.07%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>0.44%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0.016 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>44.5393</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>0%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>0%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>0%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-123.8535,44.53914 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>21792</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>21792</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Montgomery Cr</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>1999-08-30</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>36</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>6909.5 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>100%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>38</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>34 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>56.03 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>30.11%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>8.16%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>0.43%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0.123 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>44.5808</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>95.67%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>38.55%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0.001 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>0%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-123.9301,44.5809 0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>21842</name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value>21842</value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value>Flynn Creek at RM 1.71 (Alsea)</value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value>1999-08-31</value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value>Yes</value>
+						</Data>
+						<Data name="FSS">
+						<value>23</value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value>14</value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value>7915.7 in</value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value>100%</value>
+						</Data>
+						<Data name="STRMPWR">
+						<value>49.1</value>
+						</Data>
+						<Data name="MIN_Z">
+						<value>523.9 m</value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value>37.39 %</value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value>26.11%</value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value>4.07%</value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value>0.44%</value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value>0.016 count/sqkm</value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value>44.5393</value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value>0%</value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value>0%</value>
+						</Data>
+            <Data name="DAROADX">
+        		<value>0 count/sqkm</value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value>0%</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates>-123.8535,44.53914 0</coordinates>
+					</Point>
+				</Placemark>
+		</Folder>
+	</Document>
+</kml>

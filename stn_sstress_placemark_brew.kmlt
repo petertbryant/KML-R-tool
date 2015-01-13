@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+  xmlns:gx="http://www.google.com/kml/ext/2.2">	<Document>
+		<name>Sediment Stressor Stations</name>
+		<Style id="stn_normal">
+			<IconStyle>
+				<scale>0.9</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/paddle/blu-blank.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id="stn_highlight">
+			<IconStyle>
+				<scale>1.5</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/paddle/ylw-blank.png</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+				<scale>1.1</scale>
+			</LabelStyle>
+		</Style>
+        <StyleMap id="stnsHighlight">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#stn_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#stn_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+		<Folder>
+			<name>Sample Location</name>
+      <% for(ii in 1:length(tmp.sp.stn.GE.sed@data$STATION_KEY)){ %>
+				<Placemark>
+					<name><%=as.character(tmp.sp.stn.GE.sed@data$STATION_KEY[ii])%></name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="STATION_KEY">
+						<value><%=as.character(tmp.sp.stn.GE.sed$STATION_KEY[ii])%></value>
+						</Data>
+					  <Data name="SITE_NAME">
+						<value><%=as.character(tmp.sp.stn.GE.sed$SITE_NAME[ii])%></value>
+						</Data>
+						<Data name="SAMPLE_DATE">
+						<value><%=format(tmp.sp.stn.GE.sed$DATE[ii], format = "%m/%d/%Y")%></value>
+						</Data>
+						<Data name="Biocriteria Impaired">
+  					<value><%=tmp.sp.stn.GE.sed$Impaired[ii]%></value>
+						</Data>
+						<Data name="FSS">
+						<value><%=as.character(tmp.sp.stn.GE.sed$FSS_26Aug14[ii])%></value>
+						</Data>  	
+            <Data name="Sediment Stressor Identified">
+						<value><%=tmp.sp.stn.GE.sed$SedStress[ii]%></value>
+            </Data>
+						<Data name="TMDL_Target">
+						<value><%=as.character(tmp.sp.stn.GE.sed$TMDL_Target[ii])%></value>
+						</Data>
+						<Data name="sum_1095_days">
+						<value><%=paste(as.character(round(tmp.sp.stn.GE.sed$sum_1095_days[ii],1)),"mm")%></value>
+						</Data>
+						<Data name = "PALITHERODRCA">
+						<value><%=paste(as.character(round(tmp.sp.stn.GE.sed$PALITHERODRCA[ii],2)),"%",sep = "")%></value>
+						</Data>
+						<Data name="STRMPWR">
+						<value><%=as.character(round(tmp.sp.stn.GE.sed$STRMPWR[ii],1))%></value>
+						</Data>
+						<Data name="MIN_Z">
+						<value><%=paste(as.character(round(tmp.sp.stn.GE.sed$MIN_Z[ii],1)),"m")%></value>
+						</Data>
+						<Data name="PASILTRCA">
+						<value><%=paste(as.character(round(tmp.sp.stn.GE.sed$PASILTRCA[ii],2)),"%")%></value>
+						</Data>
+						<Data name="PACLAYRCA">
+          	<value><%=paste(as.character(round(tmp.sp.stn.GE.sed$PACLAYRCA[ii],2)),"%",sep = "")%></value>
+						</Data>
+            <Data name="XSLOPE_MAP">
+						<value><%=paste(as.character(round(tmp.sp.stn.GE.sed$XSLOPE_MAP[ii],2)),"%",sep = "")%></value>
+						</Data>
+  					<Data name="PASUSCEP5_DE">
+						<value><%=paste(as.character(round(tmp.sp.stn.GE.sed$PASUSCEP5_DE[ii],2)),"%",sep = "")%></value>
+						</Data>
+            <Data name="DAPOPRCA2010">
+  					<value><%=paste(as.character(round(tmp.sp.stn.GE.sed$DAPOPRCA2010[ii],3))," count/sqkm",sep = "")%></value>
+						</Data>
+            <Data name="LAT_RAW">
+    				<value><%=as.character(round(tmp.sp.stn.GE.sed$LAT_RAW[ii],4))%></value>
+						</Data>
+            <Data name="POWNRCA_PRI">
+      			<value><%=paste(as.character(round(tmp.sp.stn.GE.sed$POWNRCA_PRI[ii],2)),"%",sep = "")%></value>
+						</Data>
+            <Data name="PDISRSA_1YR">
+        		<value><%=paste(as.character(round(tmp.sp.stn.GE.sed$PDISRSA_1YR[ii],2)),"%",sep = "")%></value>
+						</Data>
+            <Data name="DAROADX">
+        		<value><%=paste(as.character(round(tmp.sp.stn.GE.sed$DAROADX[ii],3)),"count/sqkm")%></value>
+						</Data>
+            <Data name="PAOWNRCA_AGR">
+            <value><%=paste(as.character(round(tmp.sp.stn.GE.sed$PAOWNRCA_AGR[ii],2)),"%",sep = "")%></value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates><%=tmp.sp.stn.GE.sed@coords[ii,1]%>,<%=tmp.sp.stn.GE.sed@coords[ii,2],0%></coordinates>
+					</Point>
+				</Placemark><% } %>
+		</Folder>
+	</Document>
+</kml>

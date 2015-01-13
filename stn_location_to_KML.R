@@ -75,6 +75,10 @@ tmp.sp.stn <- readShapeSpatial(paste0(tmp.dir,"/",tmp.shp),proj4string = CRS("+i
 # ## clean up
 # rm(tmp.stn.locs)
 
+#Pull in mid coast for processing
+midcoast <- readShapeSpatial("C:/Users/pbryant/desktop/midcoasttmdl-GIS/owrd_midcoast.shp",proj4string = CRS("+init=epsg:2992"))
+midcoast.GE <- spTransform(midcoast,CRS("+init=epsg:4326"))
+
 #order.to.keep <- data.frame('r' = row.names(tmp.sp.stn@data), 'SVN' = tmp.sp.stn@data$SVN)
 
 tmp.sp.stn@data <- base::merge(tmp.sp.stn@data, tmp.stn.data, by = 'SVN', suffixes = c('','.y'), sort = FALSE)
@@ -89,6 +93,9 @@ row.names(tmp.sp.stn@data) <- as.character(as.numeric(row.names(tmp.sp.stn@data)
 ## tranform to CRS used by Google Earth ("+init=epsg:4326")
 tmp.sp.stn.GE <- spTransform(tmp.sp.stn,CRS("+init=epsg:4326"))
 
+#find stations in midcoast
+midcoast.stn <- over(midcoast.GE,tmp.sp.stn.GE,returnList=TRUE)
+
 ##
 ## get coordinates from sp in Google Earth CRS
 for(gg in 1:length(tmp.sp.stn.GE$SVN)) {
@@ -96,8 +103,20 @@ for(gg in 1:length(tmp.sp.stn.GE$SVN)) {
   tmp.sp.stn.GE$lon.GE[gg] <- tmp.sp.stn.GE@coords[gg,1]
 }
 
+#Split data frame into 3 different layers
+#One for impairments with sediment 
+tmp.sp.stn.GE.sed <- tmp.sp.stn.GE[!is.na(tmp.sp.stn.GE$TMDL_Target),]
+tmp.sp.stn.GE.sed$SedStress <- "Yes"
+#One for the rest
+tmp.sp.stn.GE.rest <- tmp.sp.stn.GE[!tmp.sp.stn.GE$SVN %in% as.character(tmp.sp.stn.GE.sed$SVN),]
+tmp.sp.stn.GE.rest[grep('dfw|CTSI',tmp.sp.stn.GE.rest$STATION_KEY),'Impaired'] <- 'Not assessed'
+tmp.sp.stn.GE.rest[!tmp.sp.stn.GE.rest$STATION_KEY %in% midcoast.stn[1][[1]]$STATION_KEY,'Impaired'] <- 'Outside Mid Coast'
+tmp.sp.stn.GE.rest[tmp.sp.stn.GE.rest$STATION_KEY %in% c(34658,34659,34672,33363,25295,33329,23826,33331,34670,35689),'Impaired'] <- "Yes"
+tmp.sp.stn.GE.rest$SedStress <- "No"
+
 ##
 ## write KML files for Google Earth
-brew(file="./stn_placemark_brew.kmlt",output="stn_placemark_brew.kml")
-
+brew(file="./stn_placemark_brew_selmod.kmlt",output="SourceAnalysisDevelopmentStations.kml")
+#brew(file="./stn_bimp_placemark_brew.kmlt",output="stn_imp_placemark_brew.kml")
+brew(file="./stn_sstress_placemark_brew_selmod.kmlt",output="SedimentStressorStations.kml")
 ## done
